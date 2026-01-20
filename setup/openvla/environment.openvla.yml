@@ -1,0 +1,40 @@
+name: openvla-interp
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - tqdm
+  - pyyaml
+  - imageio
+  - opencv
+  - pillow
+  - wandb
+  - pytorch=2.2.0
+  - pytorch-cuda=12.1
+  - torchvision=0.17.0
+  - torchaudio=2.2.0
+  - ninja
+  - cmake
+  - pip:
+      - transformers==4.48.1
+      - tokenizers==0.21.2
+      - timm>=0.9.10,<1.0.0
+      - accelerate
+      - draccus
+      - huggingface_hub
+      - tensorflow==2.16.1
+      - tensorflow-datasets
+      - libero
+      - robosuite==1.4.0
+      - imageio[ffmpeg]
+      - bddl==1.0.1
+      - easydict==1.9
+      - cloudpickle==2.1.0
+      - gym==0.25.2
+      - mujoco
+      - flash-attn==2.5.5

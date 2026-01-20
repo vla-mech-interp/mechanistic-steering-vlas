@@ -1,0 +1,25 @@
+model:
+  config_name: pi0_fast_hooked
+  checkpoint_name: pi0_fast_droid
+
+env:
+  dataset_name: droid_100
+  dataset_data_dir: gs://gresearch/robotics/
+  dataset_split: train
+  episode_index: 0
+  show_every: 50
+  max_steps: 1
+
+intervention:
+  enabled: true
+  dict_name: high_cluster
+  coef: 10.0
+  num_layers: 18
+  hidden_dim: 16384
+
+logging:
+  root_dir: openpi/experiments/logs
+  run_name: null
+  save_images: true
+  save_actions: true
+  image_key: observation/exterior_image_1_left

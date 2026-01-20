@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Packaging
+*.egg-info/
+*.egg
+
+# Env
+.env
+.venv/
+
+# Logs and artifacts
+**/logs/
+**/artifacts/
+utils/libero_config/
+utils/libero_assets/
+utils/libero_datasets/
+
+# Jupyter
+.ipynb_checkpoints/

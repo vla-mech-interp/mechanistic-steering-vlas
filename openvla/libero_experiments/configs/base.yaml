@@ -1,0 +1,22 @@
+model:
+  family: openvla
+  checkpoint: openvla/openvla-7b-finetuned-libero-10
+  load_in_8bit: false
+  load_in_4bit: false
+  center_crop: true
+
+env:
+  task_suite_name: libero_10
+  num_steps_wait: 10
+  num_trials_per_task: 1
+  seed: 7
+
+intervention:
+  enabled: false
+  dict_name: blank
+  coef: 1.0
+
+logging:
+  root_dir: libero_experiments/logs
+  save_video: true
+  save_actions: true
